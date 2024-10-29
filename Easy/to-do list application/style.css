@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("./utils/sethmaughan-UI1SFTkGKNw-unsplash.jpg");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 500px;
+    padding: 20px;
+    background: rgba(72, 72, 72, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: none;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 65%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    padding: 15px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:nth-child(3) {
+    background-color: #dc3545;
+  }
+  
+  button:nth-child(3):hover {
+    background-color: #c82333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #444;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  li button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #e0a800;
+  }
+  
+  li.completed button {
+    background-color: #6c757d;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  }
+  
